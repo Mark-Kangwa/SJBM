@@ -1,0 +1,359 @@
+/* Main styles for the job board */
+.sjbm-job-listings {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.sjbm-job-listing-container {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.sjbm-job-listing-container:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sjbm-job-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.sjbm-job-title {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #4464AD;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sjbm-job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.sjbm-job-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.sjbm-job-meta span:before {
+    content: "•";
+    margin-right: 5px;
+    color: #999;
+}
+
+.sjbm-job-meta span:first-child:before {
+    display: none;
+}
+
+.sjbm-job-salary {
+    color: #008000;
+    font-weight: bold;
+}
+
+.sjbm-job-deadline {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.sjbm-deadline-passed {
+    color: #FF0000;
+    font-style: italic;
+}
+
+.sjbm-job-excerpt {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.sjbm-job-actions a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #4464AD;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.sjbm-job-actions a:hover {
+    background: #3a5795;
+}
+
+/* Filters */
+.sjbm-job-filters {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+.sjbm-filter-field {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.sjbm-filter-field label {
+    margin-right: 5px;
+}
+
+.sjbm-filter-button,
+.sjbm-reset-button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sjbm-filter-button {
+    background: #4464AD;
+    color: #fff;
+}
+
+.sjbm-reset-button {
+    background: #ddd;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Pagination */
+.sjbm-pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sjbm-pagination a,
+.sjbm-pagination span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.sjbm-pagination a:hover {
+    background: #f5f5f5;
+}
+
+.sjbm-pagination .current {
+    background: #4464AD;
+    color: #fff;
+    border-color: #4464AD;
+}
+
+/* Application Form */
+.sjbm-application-form {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.sjbm-application-form h3 {
+    margin-top: 0;
+}
+
+.sjbm-form-field {
+    margin-bottom: 15px;
+}
+
+.sjbm-form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sjbm-form-field input[type="text"],
+.sjbm-form-field input[type="email"],
+.sjbm-form-field textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.sjbm-form-field textarea {
+    min-height: 150px;
+}
+
+.sjbm-submit-button {
+    padding: 10px 20px;
+    background: #4464AD;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sjbm-submit-button:hover {
+    background: #3a5795;
+}
+
+.sjbm-file-hint {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.sjbm-form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    display: none;
+}
+
+.sjbm-form-message.success {
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.sjbm-form-message.error {
+    background: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+.sjbm-form-error {
+    color: #a94442;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Single Job Page */
+.sjbm-single-job {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sjbm-job-header {
+    margin-bottom: 30px;
+}
+
+.sjbm-job-content {
+    line-height: 1.6;
+}
+
+.sjbm-job-footer {
+    margin-top: 30px;
+}
+
+.sjbm-apply-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #4464AD;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.sjbm-apply-button:hover {
+    background: #3a5795;
+}
+
+/* Job item with expired deadline */
+.sjbm-job-item.sjbm-job-expired {
+    opacity: 0.8;
+    background-color: #f9f9f9;
+}
+
+.sjbm-job-item.sjbm-job-expired .sjbm-job-title a {
+    color: #999 !important;
+}
+
+.sjbm-job-deadline {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.sjbm-deadline-passed {
+    color: #d63638;
+    font-weight: bold;
+}
+
+/* Admin deadline column */
+.column-application_deadline {
+    width: 120px;
+}
+
+.sjbm-job-board-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sjbm-filters-container {
+    margin-bottom: 30px;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.sjbm-filter-field {
+    margin-bottom: 15px;
+}
+
+.sjbm-filter-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sjbm-filter-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.sjbm-job-archive {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sjbm-job-item:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Loading indicator */
+.sjbm-loading {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #4464AD;
+    background: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Filter error messages */
+.sjbm-filter-error {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+}
+
+/* Animation for job items */
+.sjbm-job-item {
+    transition: all 0.3s ease;
+}

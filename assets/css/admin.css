@@ -1,0 +1,119 @@
+/* Admin styles for the job board */
+.sjbm-admin-application-details {
+    line-height: 1.6;
+}
+
+.sjbm-detail-row {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.sjbm-detail-row:last-child {
+    border-bottom: none;
+}
+
+.sjbm-cover-letter {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.sjbm-file-size {
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+/* Export page styles */
+.sjbm-export-options {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.sjbm-export-options h2 {
+    margin-top: 0;
+}
+
+
+.widefat .column-job {
+    width: 25%;
+}
+
+.widefat .column-applicant_email {
+    width: 20%;
+}
+
+.widefat .column-resume {
+    width: 15%;
+}
+
+.widefat .column-date {
+    width: 15%;
+}
+
+
+.column-application_deadline {
+    width: 120px;
+}
+
+/* Highlight past deadlines in admin */
+td.column-application_deadline span.past-deadline {
+    color: #d63638;
+    font-weight: bold;
+}
+
+.sjbm-job-board-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sjbm-filters-container {
+    margin-bottom: 30px;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.sjbm-filter-field {
+    margin-bottom: 15px;
+}
+
+.sjbm-filter-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sjbm-filter-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.sjbm-filter-button,
+.sjbm-reset-button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sjbm-filter-button {
+    background: #4464AD;
+    color: white;
+}
+
+.sjbm-reset-button {
+    background: #ddd;
+    color: #333;
+    text-decoration: none;
+}
